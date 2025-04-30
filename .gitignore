@@ -1,3 +1,9 @@
+.DS-Store
+.DS_Store
+
+# GitHub Token
+github_token.txt
+
 *.sqlite*
 *.env
 !.env.dist
