@@ -25,7 +25,7 @@ download-repositories:
     cd src/repository_analyzer && go run ./cmd/analyzer/
 
 cleanup-repositories:
-    export DB_PATH="{{join(DB_DIR, "database.sqlite")}}" && \
+    export DB_PATH="{{join(DB_DIR, "dataset.sqlite")}}" && \
     export REPOS_PATH="{{join(invocation_directory(), "./src/repository_analyzer/repositories")}}" && \
     python ./src/dataset_cleaner/clean-repos.py
 
